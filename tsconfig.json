@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "esnext",
+    "allowJs": false,
+    "checkJs": false,
+    "outDir": "./lib",
+    "rootDir": "src",
+    "noEmit": false,
+    "strict": true,
+    "declaration": true,
+    "declarationMap": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"],
+  "paths": {
+    "*": ["src/types/**/*"]
+  }
+}
