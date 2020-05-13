@@ -5,7 +5,7 @@ module.exports = {
     project: 'tsconfig.json',
   },
   plugins: ['@typescript-eslint'],
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:prettier/recommended'],
+  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
   env: {
     node: true,
     browser: true,
@@ -15,11 +15,5 @@ module.exports = {
     page: true,
     browser: true,
     context: true,
-    jestPuppeteer: true,
-  },
-  settings: {
-    react: {
-      version: 'detect',
-    },
   },
 };
