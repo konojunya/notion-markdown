@@ -5,10 +5,12 @@ on:
     types: [opened,synchronize]
 
 jobs:
-  lint:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
+        with:
+          node-version: '14.1.0'
       - run: yarn --frozen-lockfile
       - run: yarn test
